@@ -1,0 +1,19 @@
+{
+  "name": "@repro/contract",
+  "module": "index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@orpc/contract": "^1.12.2",
+    "zod": "^4.1.13"
+  }
+}
