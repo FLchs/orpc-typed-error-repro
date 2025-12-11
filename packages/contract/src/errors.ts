@@ -1,7 +1,7 @@
 import type { ErrorMap } from "@orpc/contract";
 import * as z from "zod/v4";
 
-export const errors: ErrorMap = {
+export const errors = {
   INPUT_VALIDATION_FAILED: {
     status: 422,
     data: z.object({
@@ -9,4 +9,4 @@ export const errors: ErrorMap = {
       formErrors: z.array(z.string()),
     }),
   },
-};
+} satisfies ErrorMap;
